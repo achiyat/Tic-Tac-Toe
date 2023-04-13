@@ -18,26 +18,13 @@ export const LoginButton = () => {
         </div>
         <button
           className="btn btn-primary w-100"
-          onClick={() => {
-            const redirectUrl =
-              window.location.hostname === "localhost"
-                ? "http://localhost:3000"
-                : "https://tic-tac-toe-of-achiya.netlify.app";
-            console.log(window.location.hostname);
-            loginWithRedirect({ redirectUri: redirectUrl });
-          }}
-        >
-          Log In
-        </button>
-        {/* <button
-          className="btn btn-primary w-100"
           onClick={() =>
             loginWithRedirect("https://tic-tac-toe-of-achiya.netlify.app/")
           }
         >
           Log In
         </button>
-        <button
+        {/* <button
           className="btn btn-primary w-100"
           onClick={() => loginWithRedirect("http://localhost:3000")}
         >
