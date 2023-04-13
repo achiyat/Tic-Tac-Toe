@@ -19,7 +19,7 @@ export const LoginButton = () => {
         <button
           className="btn btn-primary w-100"
           onClick={() =>
-            loginWithRedirect("https://tic-tac-toe-of-achiya.netlify.app/")
+            loginWithRedirect("https://tic-tac-toe-of-achiya.netlify.app")
           }
         >
           Log In
